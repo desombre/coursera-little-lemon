@@ -28,6 +28,43 @@
   color: #61dafb;
 }
 
+.lightgray-bg{
+  background-color: lightgray;
+}
+.rounded{
+  border-radius: 2px;
+  padding: 2px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 2rem;
+}
+
+nav > ul > li {
+    display: inline;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+nav > ul > li:hover {
+  background-color: lightgray
+}
+
+.layout{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+.content {
+  flex: 1;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +72,45 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer{
+  align-self: flex-end;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0062cc;
 }
